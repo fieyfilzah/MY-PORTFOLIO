@@ -183,6 +183,7 @@ ul {
   color: white;
 }
 
+/
 /* PROFILE VISUAL */
 .hero-visual {
   display: flex;
@@ -190,43 +191,59 @@ ul {
   align-items: center;
 }
 
+/* PASSPORT SIZE PHOTO */
 .profile-circle {
-  width: 290px;
-  height: 290px;
-  border-radius: 50%;
-  background: linear-gradient(
-    135deg,
-    #17456e,
-    #4e98cc
-  );
-  border: 10px solid white;
-  box-shadow: var(--shadow);
+  width: 245px;
+  height: 350px;
+
+  border-radius: 12px;
+  overflow: hidden;
+
+  background: #eaf3fa;
+  border: 8px solid white;
+
+  box-shadow:
+    0 10px 30px rgba(18, 52, 86, 0.15);
+
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 
-/* PROFILE PHOTO */
+/* PROFILE IMAGE */
 .profile-photo {
   width: 100%;
   height: 100%;
-  display: block;
+
   object-fit: cover;
-  object-position: center 30%;
-  border-radius: 50%;
+  object-position: center top;
+
+  display: block;
 }
 
+/* PHOTO LABEL */
 .profile-label {
   background: white;
   color: var(--navy);
+
   padding: 12px 24px;
   border-radius: 30px;
+
   box-shadow: var(--shadow);
+
   margin-top: -20px;
   z-index: 1;
+
   font-size: 13px;
   font-weight: bold;
+}
+
+/* RESPONSIVE PHOTO */
+@media (max-width: 700px) {
+  .profile-circle {
+    width: 210px;
+    height: 300px;
+  }
 }
 
 /* COMMON SECTIONS */
